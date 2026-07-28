@@ -32,6 +32,20 @@ html{
     scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 3rem;
+    background-color: var(--black-color);
+}
+
 body{
     background-color: var(--main-color);
 }
@@ -87,7 +101,7 @@ section{
     background: url("/images/home.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    margin-top: -12.5rem;
+    margin-top: -12.4rem;
     display: flex;
     align-items: center;
     
@@ -121,6 +135,23 @@ section{
     color: white;
 }
 
+.btn:hover{
+    opacity: 0.9;
+}
+
+.heading{
+    color: white;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid white;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+
 /* Home End */
 
 /* Menu Start */
@@ -128,6 +159,39 @@ section{
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    padding: 3rem;
+    background-color: white;
+    border-radius: 3rem;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start ;
+    justify-content: space-between;
+}
+
+.menu .box-container .box .menu-category{
+    font-size: 1.2rem;
+}
+
+.menu .box-container .box h3{
+    font-size: 3rem;
+    padding: 1rem 0;
+
+}
+
+.menu .box-container .box .price{
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: 300;
 }
 
 .menu .box-container .box img{
