@@ -108,7 +108,7 @@ section{
     font-weight: 300;
     line-height: 1.8;
     padding: 1rem 0;
-    color: #ccc;
+    color: #eae8e8;
 }
 
 .btn{
@@ -122,3 +122,17 @@ section{
 }
 
 /* Home End */
+
+/* Menu Start */
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.menu .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Menu End */
