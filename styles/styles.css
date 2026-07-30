@@ -308,3 +308,36 @@ a{
 }
 
 /* Products End */
+
+/* About Start */
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.about .row .content{
+  flex: 1 1 45rem;
+}
+
+.about .row .content h3{
+    color: white;
+    font-size: 3rem;
+}
+
+.about .row .content p{
+    color: rgb(234, 232, 232);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+.about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* About End */
