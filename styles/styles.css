@@ -138,6 +138,7 @@ a{
     background-color: var(--black-color);
     font-size: 1.7rem;
     color: white;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -377,3 +378,73 @@ a{
 }
 
 /* Review End */
+
+/* Contact Start */
+
+.contact .row{
+    display: flex;
+    gap: 3rem;
+    background-color: var(--black-color);
+    flex-wrap: wrap;
+    border-radius: 2rem;
+}
+
+.contact .row .map,
+.contact .row form{
+    flex: 1 1 45rem;
+    width: 100%;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.contact .row form{
+     object-fit: cover;
+     text-align: center;
+     padding: 5rem 2rem;
+         border-radius: 0 1rem 1rem 0;
+
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.contact .row form .inputs{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    border: var(--border);
+    border-radius: 1rem;
+}
+
+.contact .row form .inputs i{
+    color: white;
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-left: 2rem;
+    
+}
+
+
+.contact .row form .inputs input{
+    font-size: 1.7rem;
+    width: 100%;
+    padding: 2rem;
+    margin: .75rem;
+    color: white;
+    text-transform: none;
+    background: none;
+}
+
+.contact .row form .btn{
+    background-color: white;
+    color: var(--black-color);
+}
+
+.contact .row form .btn:hover{
+    opacity: .9;
+    color: var(--main-color);
+}
+
+/* Contact End */
