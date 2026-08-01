@@ -28,8 +28,7 @@
 html{
     font-size: 62.5%; 
     overflow-x: hidden;
-    scroll-padding-top: 9rem;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 
 html::-webkit-scrollbar{
@@ -52,6 +51,7 @@ body{
 
 section{
     padding: 3.5rem 7%;
+    scroll-margin-top: 10rem;
 }
 
 a{
@@ -60,6 +60,36 @@ a{
 }
 
 /* Header Start */
+
+.header .search-form{
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background-color: white;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    transform: scaleY(0);
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form i{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black-color);
+}
+
+.header .search-form input{
+    width: 100%;
+    margin: 1.5rem;
+}
 
 .header .logo img{
     height: 7rem;
@@ -96,6 +126,70 @@ a{
     font-size: 2rem;
     background-color: transparent;
     margin: 0 1rem;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .cart-items-container{
+    position: absolute;
+    top: 95%;
+    right: -150%;
+    width: 35rem ;
+    height: calc(100vh - 9rem);
+    background-color: white;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    border-radius: 3rem;
+    padding: 2rem 2rem;
+
+}
+
+.header .cart-items-container.active{
+    right: 3rem;
+}
+
+.header .cart-items-container .btn{
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.header .cart-items-container .cart-item{
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 3rem;
+  
+}
+
+.header .cart-items-container .cart-item:hover{
+      box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+      transition: .5s all ease;
+}
+
+.header .cart-items-container .cart-item .content h3{
+    font-size: 1.8rem;
+    color: var(--black-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .cart-items-container .cart-item .content .price{
+    font-size: 1.4rem;
+}
+
+.header .cart-items-container .cart-item .fa-times{
+    position: absolute;
+    right: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black-color);
+}
+
+.header .cart-items-container .cart-item img{
+    height: 7rem;
 }
 /* Header End */
 
@@ -576,6 +670,7 @@ a{
 .credit{
     color: white;
     font-size: 1.5rem;
+    margin-top: 5rem;
 }
 
 .credit span{
@@ -583,3 +678,63 @@ a{
 }
 
 /* Footer End */
+
+/* Responsive Design Start */
+
+@media (max-width: 990px) {
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    .header .logo img{
+        height: 7rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .products .box-container .box .box-head .name{
+
+         font-size: 3.4rem;
+
+    }
+}
+
+@media (max-width: 768px){
+     #menu-btn{
+        display: inline-block;
+     }
+
+     .header .navbar{
+        position: absolute;
+        top: 95%;
+        background-color: white;
+        height: calc(100vh - 9rem);
+        width: 30rem;
+        box-shadow: 0 20px 14px 0 rgba(0, 0, 0, 75%);
+        display: block;
+        right: -150%;
+        
+     }
+
+     .header .navbar.active{
+        right: 3rem;
+     }
+
+     .header .navbar a{
+        color: var(--black-color);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+     }
+
+
+}
+
+/* Responsive Design End */
