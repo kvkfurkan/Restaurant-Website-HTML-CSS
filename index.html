@@ -6,6 +6,7 @@
     <title>Foodie</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" type="module"></script>
 </head>
 <body>
 
@@ -14,22 +15,22 @@
         <a href="#" class="logo">
             <img src="images/logo.png" alt="logo">
         </a>
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#" class="">About</a>
-            <a href="#" class="">Menu</a>
-            <a href="#" class="">Products</a>
-            <a href="#" class="">Review</a>
-            <a href="#" class="">Contact</a>
-            <a href="#" class="">Blog</a>
+        <nav class="navbar" id="menu-bar">
+            <a href="#home">Home</a>
+            <a href="#menu" class="">Menu</a>
+            <a href="#products" class="">Products</a>
+            <a href="#about" class="">About</a>
+            <a href="#review" class="">Review</a>
+            <a href="#contact" class="">Contact</a>
+            <a href="#blog" class="">Blog</a>
         </nav>
 
         <div class="buttons">
-            <button>
+            <button id="search-btn">
                 <i class="fas fa-search"></i>
             </button>
 
-            <button>
+            <button id="cart-btn">
                 <i class="fas fa-shopping-cart"></i>
             </button>
 
@@ -38,13 +39,13 @@
             </button>
         </div>
 
-        <div class="search-form">
+        <div class="search-form" id="search-form">
             <input type="text" class="search-input" id="search-box" placeholder="Search Here">
             <i class="fas fa-search"></i>
         
         </div>
 
-        <div class="cart-items-container">
+        <div class="cart-items-container" id="cart-form">
             <div class="cart-item">
                 <i class="fas fa-times"></i>
                 <img src="images/menu-1.png" alt="menu">
@@ -89,7 +90,7 @@
     <!-- Header End -->
      <!-- Home Section Start -->
 
-        <section class="home">
+        <section class="home" id="home">
            <div class="content">
              <h3>Express Home Delivery</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -105,7 +106,7 @@
 
        <!-- Menu Section Start -->
 
-        <section class="menu">
+        <section class="menu" id="menu">
             <h2 class="heading">our <span>menu</span></h2>
             <div class="box-container">
                 <div class="box">
@@ -164,7 +165,7 @@
 
        <!-- Products Section Start -->
 
-        <section class="products">
+        <section class="products" id="products">
             <h2 class="heading">our <span>products</span></h2>
             <div class="box-container">
                 <div class="box">
@@ -236,7 +237,7 @@
 
        <!-- About Section Start -->
 
-        <section class="about">
+        <section class="about" id="about">
             <h2 class="heading">About <span>us</span></h2>
             <div class="row">
                  <div class="image">
@@ -268,7 +269,7 @@
 
        <!-- Review Section Start -->
 
-       <section class="review">
+       <section class="review" id="review">
         <h2 class="heading">customer <span>review</span> </h2>
         <div class="box-container">
             <div class="box">
@@ -333,7 +334,7 @@
        <!-- Review Section End -->
 
        <!-- Contact Section Start -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2 class="heading">Contact <span>us</span></h2>
           <div class="row">
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6019.859727055177!2d29.010704899238874!3d41.02679036216403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab76ef412dcb1%3A0xca466a09dcaf1d84!2zw5xza8O8ZGFyIFNhaGlsaQ!5e0!3m2!1str!2str!4v1785599763333!5m2!1str!2str" 
@@ -367,7 +368,7 @@
        <!-- Contact Section End -->
 
        <!-- Blog Section Start -->
-        <section class="blog">
+        <section class="blog" id="blog">
             <h2 class="heading">Our <span>Blog</span></h2>
             <div class="box-container">
                 <div class="box">
@@ -423,15 +424,7 @@
                 <a href="#" class="fab fa-pinterest"></a>
             </div>
 
-            <div class="links">
-                <a href="#" class="active">home</a>
-                <a href="#">about</a>
-                <a href="#">menu</a>
-                <a href="#">products</a>
-                <a href="#">review</a>
-                <a href="#">contact</a>
-                <a href="#">blog</a>
-            </div>
+           
 
             <div class="credit">
                 coded by <span>Furkan KAVAK</span> | all rights reserved &copy
